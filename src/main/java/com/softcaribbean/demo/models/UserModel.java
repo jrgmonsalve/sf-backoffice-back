@@ -1,6 +1,7 @@
 package com.softcaribbean.demo.models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 
 @Entity
 @Table(name="users")
@@ -36,5 +37,10 @@ public class UserModel {
 
     public String getName(){
         return this.name;
+    }
+
+    public ArrayList<String> getAllowedPages() {
+        ArrayList<String> pages = new ArrayList<>();
+        return pages;
     }
 }
